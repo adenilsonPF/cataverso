@@ -55,6 +55,18 @@ const texts = {
     }
 };
 
+let currentSlide = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.book-slide');
+    const totalSlides = slides.length;
+
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    const offset = -currentSlide * 100;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+}
+
+
 function changeLanguage(lang) {
     const elements = [
         "subtitle", "menuBooks", "menuProjects", "menuMedia", "menuContact",

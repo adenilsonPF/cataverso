@@ -15,6 +15,42 @@ header img {
     width: 150px;
     margin-top: 10px;
 }
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.book-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    text-align: center;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.carousel-button.prev {
+    left: 10px;
+}
+.carousel-button.next {
+    right: 10px;
+}
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .language-selector img {
     width: 24px;
     margin: 0 5px;
