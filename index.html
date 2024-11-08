@@ -1,123 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adenilson Carvalho - Autor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            margin-top: 10px;
-        }
-        nav {
-            text-align: center;
-            margin: 1em 0;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        section {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-        }
-        .book-section {
-            border-bottom: 1px solid #ccc;
-            padding: 1em 0;
-        }
-        .social-links a {
-            margin: 0 10px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Adenilson Carvalho - Poeta e Autor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Adenilson Carvalho</h1>
-    <p>Autor de livros de poesia e finanças pessoais</p>
-    <img src="foto-perfil.jpeg" alt="Foto de Adenilson Carvalho"> <!-- Insira sua foto como 'foto-perfil.jpg' na pasta do repositório -->
-</header>
+    <!-- Header com idiomas -->
+    <header>
+        <div class="language-select">
+            <img src="images/br_64px.png" alt="Português" onclick="changeLanguage('pt')">
+            <img src="images/us_64px.png" alt="English" onclick="changeLanguage('en')">
+            <img src="images/es_64px.png" alt="Español" onclick="changeLanguage('es')">
+        </div>
+        <h1 id="author-name">Adenilson Carvalho</h1>
+    </header>
 
-<nav>
-    <a href="#livros">Livros</a>
-    <a href="#eventos">Outras Obras/Projetos</a>
-    <a href="#midia">Fotos e Vídeos</a>
-    <a href="#contato">Contato</a>
-</nav>
+    <!-- Seção Principal -->
+    <main>
+        <!-- Foto do autor -->
+        <section id="about-author">
+            <img src="images/foto-perfil.jpeg" alt="Foto de Adenilson Carvalho" class="author-photo">
+            <p id="about-text">
+                Autor de livros de poesia, provérbios e análises de mercado. Inspirado pela simplicidade do cotidiano e a profundidade dos sentimentos humanos.
+            </p>
+        </section>
 
-<section id="livros">
-    <h2>Livros</h2>
+        <!-- Livros -->
+        <section id="books">
+            <h2 id="books-title">Livros</h2>
+            <div class="book">
+                <h3 id="book1-title">Arranha Verso</h3>
+                <a href="https://a.co/d/3tgEbOP" target="_blank" id="book1-link">Compre na Amazon</a>
+                <iframe src="https://ler.amazon.com.br/kp/card?asin=B0DFDNGHMD&preview=inline" width="336" height="550" frameborder="0"></iframe>
+            </div>
+            <div class="book">
+                <h3 id="book2-title">Poemas para se ler descalço</h3>
+                <a href="https://a.co/d/2lqJErN" target="_blank" id="book2-link">Compre na Amazon</a>
+                <iframe src="https://ler.amazon.com.br/kp/card?asin=B0DJQ2T3PM&preview=inline" width="336" height="550" frameborder="0"></iframe>
+            </div>
+        </section>
 
-    <div class="book-section">
-        <h3>"Arranha Verso"</h3>
-        <p>Uma coleção poética única que explora o sentir do mundo e os detalhes simples da vida.</p>
-        <a href="https://a.co/d/3tgEbOP" target="_blank">Compre na Amazon</a>
-        <br><br>
-        <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://ler.amazon.com.br/kp/card?asin=B0DFDNGHMD&preview=inline&linkCode=kpe&ref_=kip_embed_taf_preview_N5F3PCM7THFKRABKF5Z1" ></iframe>
-    </div>
+        <!-- Redes sociais e contato -->
+        <section id="contact">
+            <h2 id="contact-title">Contato</h2>
+            <p id="phone-label">Telefone: +55 11 99999-9999</p>
+            <p id="socials">Acompanhe-me em:
+                <a href="https://instagram.com/eu.adenilsoncarvalho" target="_blank">Instagram</a>,
+                <a href="https://facebook.com/adenilson.r.carvalho" target="_blank">Facebook</a>,
+                <a href="https://medium.com/@adenilson.carvalho" target="_blank">Medium</a>
+            </p>
+        </section>
 
-    <div class="book-section">
-        <h3>"Poemas para se ler descalço"</h3>
-        <p>Um convite para se reconectar com a poesia em seu estado mais puro e despretensioso.</p>
-        <a href="https://a.co/d/2lqJErN" target="_blank">Compre na Amazon</a>
-        <br><br>
-        <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://ler.amazon.com.br/kp/embed?asin=B0DJQ2T3PM&preview=newtab&linkCode=kpe&ref_=kip_embed_taf_preview_1HXWP5WTJRCPA5500Y9C"></iframe>
-    </div>
+        <!-- Outras Obras e Eventos -->
+        <section id="other-works">
+            <h2 id="works-title">Outras Obras e Eventos</h2>
+            <p id="events-text">Fique atento para novidades, eventos de lançamento e outras publicações futuras.</p>
+        </section>
 
-    <div class="book-section">
-        <h3>"Ações S.A."</h3>
-        <p>Guia para explorar o mercado de ações com abordagens práticas e acessíveis.</p>
-        <a href="https://www.amazon.com.br/stores/Adenilson-Roberto-Carvalho/author/B08MBK6NQ5?asin=B08MBK6NQ5&ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" target="_blank">Compre na Amazon</a>
-    </div>
-</section>
+        <!-- Galeria de Mídia -->
+        <section id="media">
+            <h2 id="media-title">Fotos e Vídeos</h2>
+            <p id="media-text">Explore fotos e vídeos de eventos e participações do autor.</p>
+        </section>
+    </main>
 
-<section id="eventos">
-    <h2>Outras Obras/Projetos</h2>
-    <p>Em breve, mais informações sobre novos projetos e eventos.</p>
-</section>
-
-<section id="midia">
-    <h2>Fotos e Vídeos</h2>
-    <p>Explore alguns momentos e inspirações por trás de cada verso e pensamento. (Em breve)</p>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Interessado em adquirir um livro diretamente comigo? Entre em contato pelo telefone abaixo.</p>
-    <p><strong>Telefone:</strong> Seu número de telefone aqui</p>
-    <p>Acompanhe-me nas redes sociais:</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/eu.adenilsoncarvalho" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com/adenilson.r.carvalho" target="_blank">Facebook</a> |
-        <a href="https://medium.com/@adenilson.carvalho" target="_blank">Medium</a>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 Adenilson Carvalho. Todos os direitos reservados.</p>
-</footer>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
