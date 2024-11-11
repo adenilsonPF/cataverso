@@ -119,7 +119,7 @@ footer {
 .book-slide a {
     display: block; /* Faz com que o link ocupe toda a largura */
     text-align: center; /* Centraliza o texto dentro do link */
-    margin-top: 10px; /* Adiciona um espaçamento entre a imagem e o texto "Compre na Amazon" */
+    margin-top: 15px; /* Adiciona um espaçamento entre a imagem e o texto "Compre na Amazon" */
     color: #000; /* Ajuste opcional da cor do texto */
     font-weight: bold; /* Deixa o texto em negrito */
     text-decoration: none; /* Remove o sublinhado do link */
