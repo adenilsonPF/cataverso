@@ -110,11 +110,30 @@ footer {
     padding: 1em 0;
     margin-top: 20px;
 }
+.book-slide img {
+    width: 50%; /* Reduz a largura da imagem para metade do tamanho original */
+    display: block; /* Torna a imagem um elemento em bloco */
+    margin: 0 auto; /* Centraliza a imagem dentro do container */
+}
+
+.book-slide a {
+    display: block; /* Faz com que o link ocupe toda a largura */
+    text-align: center; /* Centraliza o texto dentro do link */
+    margin-top: 5px; /* Adiciona um espaçamento entre a imagem e o texto "Compre na Amazon" */
+    color: #000; /* Ajuste opcional da cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.book-slide a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
 
 #Bio {
     width: 50%; /* Define que o parágrafo ocupará 66% do container */
     margin: 0 auto; /* Centraliza horizontalmente o parágrafo */
     font-size: 0.9em; /* Ajusta o tamanho da fonte para ser menor que o h1 */
     line-height: 1.5; /* Define o espaçamento entre linhas para melhorar a legibilidade */
-    color: #333; /* (Opcional) Ajuste de cor para uma leitura mais suave */
+    text-align: center;
+    color: white;
 }
