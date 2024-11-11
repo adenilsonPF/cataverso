@@ -2,11 +2,9 @@ const texts = {
     pt: {
         subtitle: "Autor de livros de poesia e mercado de ações",
         menuBooks: "Livros",
-        menuProjects: "Outras Obras/Projetos",
         menuMedia: "Fotos e Vídeos",
         menuContact: "Contato",
         sectionBooksTitle: "Livros",
-        projectsDescription: "Em breve, mais informações sobre novos projetos e eventos.",
         mediaDescription: "Explore alguns momentos e inspirações por trás de cada verso e pensamento. (Em breve)",
         sectionContactTitle: "Contato",
         contactDirectPurchase: "Interessado em adquirir um livro diretamente comigo? Entre em contato pelo telefone abaixo.",
@@ -20,11 +18,9 @@ const texts = {
     en: {
         subtitle: "Author of poetry and stock market books",
         menuBooks: "Books",
-        menuProjects: "Other Works/Projects",
         menuMedia: "Photos and Videos",
         menuContact: "Contact",
         sectionBooksTitle: "Books",
-        projectsDescription: "More information on new projects and events coming soon.",
         mediaDescription: "Explore moments and inspirations behind each verse and thought. (Coming soon)",
         sectionContactTitle: "Contact",
         contactDirectPurchase: "Interested in purchasing directly from me? Contact me at the phone number below.",
@@ -37,12 +33,10 @@ const texts = {
     },
     es: {
         subtitle: "Autor de libros de poesía y mercado de valores",
-        menuBooks: "Libros",
-        menuProjects: "Otras Obras/Proyectos",
+        menuBooks: "Libros",        
         menuMedia: "Fotos y Videos",
         menuContact: "Contacto",
         sectionBooksTitle: "Libros",
-        projectsDescription: "Pronto, más información sobre nuevos proyectos y eventos.",
         mediaDescription: "Explora momentos e inspiraciones detrás de cada verso y pensamiento. (Próximamente)",
         sectionContactTitle: "Contacto",
         contactDirectPurchase: "¿Interesado en adquirir un libro directamente conmigo? Contáctame al teléfono a continuación.",
@@ -58,11 +52,9 @@ const texts = {
 function changeLanguage(lang) {
     document.getElementById("subtitle").innerText = texts[lang].subtitle;
     document.getElementById("menu-books").innerText = texts[lang].menuBooks;
-    document.getElementById("menu-projects").innerText = texts[lang].menuProjects;
     document.getElementById("menu-media").innerText = texts[lang].menuMedia;
     document.getElementById("menu-contact").innerText = texts[lang].menuContact;
     document.getElementById("section-books-title").innerText = texts[lang].sectionBooksTitle;
-    document.getElementById("projects-description").innerText = texts[lang].projectsDescription;
     document.getElementById("media-description").innerText = texts[lang].mediaDescription;
     document.getElementById("section-contact-title").innerText = texts[lang].sectionContactTitle;
     document.getElementById("contact-direct-purchase").innerText = texts[lang].contactDirectPurchase;
