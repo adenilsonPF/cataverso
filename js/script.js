@@ -1,6 +1,5 @@
 const texts = {
     pt: {
-        subtitle: "Autor de livros de poesia e mercado de ações",
         menuBooks: "Livros",
         menuMedia: "Fotos e Vídeos",
         menuContact: "Contato",
@@ -16,7 +15,6 @@ const texts = {
         ]
     },
     en: {
-        subtitle: "Author of poetry and stock market books",
         menuBooks: "Books",
         menuMedia: "Photos and Videos",
         menuContact: "Contact",
@@ -32,7 +30,6 @@ const texts = {
         ]
     },
     es: {
-        subtitle: "Autor de libros de poesía y mercado de valores",
         menuBooks: "Libros",        
         menuMedia: "Fotos y Videos",
         menuContact: "Contacto",
@@ -50,7 +47,6 @@ const texts = {
 };
 
 function changeLanguage(lang) {
-    document.getElementById("subtitle").innerText = texts[lang].subtitle;
     document.getElementById("menu-books").innerText = texts[lang].menuBooks;
     document.getElementById("menu-media").innerText = texts[lang].menuMedia;
     document.getElementById("menu-contact").innerText = texts[lang].menuContact;
