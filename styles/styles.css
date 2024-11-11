@@ -8,7 +8,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
-    text-align: center;
+    text-align: center;     
 }
 header img {
     border-radius: 50%;
@@ -109,4 +109,12 @@ footer {
     text-align: center;
     padding: 1em 0;
     margin-top: 20px;
+}
+
+#Bio {
+    width: 66%; /* Define que o parágrafo ocupará 66% do container */
+    margin: 0 auto; /* Centraliza horizontalmente o parágrafo */
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para ser menor que o h1 */
+    line-height: 1.5; /* Define o espaçamento entre linhas para melhorar a legibilidade */
+    color: #333; /* (Opcional) Ajuste de cor para uma leitura mais suave */
 }
