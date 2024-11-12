@@ -1,5 +1,8 @@
 const texts = {
     pt: {
+        bio: `Olá, sou Adenilson Carvalho, um poeta de bolso furado que gosta de caminhar descalço pela praia e contemplar o sol 
+            nas tardes de domingo. Não escrevo para seguir tendências nem para 'engajar' – escrevo para brincar com as palavras e, 
+    se você sorrir ou se perder um pouco no meu jogo de versos, já terá valido a pena. Bem-vindo ao meu universo de pequenas maravilhas!`,
         menuBooks: "Livros",
         menuMedia: "Fotos e Vídeos",
         menuContact: "Contato",
@@ -15,6 +18,9 @@ const texts = {
         ]
     },
     en: {
+        bio: `Hello, I'm Adenilson Carvalho, a poet with holes in his pockets who loves walking barefoot along the beach 
+        and contemplating the sun on Sunday afternoons. I don't write to follow trends or to "engage"—I write to play with words, 
+        and if you smile or lose yourself a little in my game of verses, it will have been worth it. Welcome to my universe of small wonders!`,
         menuBooks: "Books",
         menuMedia: "Photos and Videos",
         menuContact: "Contact",
@@ -30,6 +36,9 @@ const texts = {
         ]
     },
     es: {
+        bio: `Hola, soy Adenilson Carvalho, un poeta de bolsillo roto que le gusta caminar descalzo por la playa y contemplar 
+        el sol en las tardes de domingo. No escribo para seguir tendencias ni para "generar compromiso"—escribo para jugar con las palabras y, 
+        si sonríes o te pierdes un poco en mi juego de versos, ya habrá valido la pena. ¡Bienvenido a mi universo de pequeñas maravillas!`,
         menuBooks: "Libros",        
         menuMedia: "Fotos y Videos",
         menuContact: "Contacto",
@@ -47,6 +56,7 @@ const texts = {
 };
 
 function changeLanguage(lang) {
+    document.getElementById("Bio").innerText = texts[lang].bio;
     document.getElementById("menu-books").innerText = texts[lang].menuBooks;
     document.getElementById("menu-media").innerText = texts[lang].menuMedia;
     document.getElementById("menu-contact").innerText = texts[lang].menuContact;
