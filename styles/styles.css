@@ -130,7 +130,7 @@ footer {
 }
 
 #Bio {
-    width: 35%; /* Define que o parágrafo ocupará 66% do container */
+    width: 45%; /* Define que o parágrafo ocupará 66% do container */
     margin: 0 auto; /* Centraliza horizontalmente o parágrafo */
     font-size: 0.9em; /* Ajusta o tamanho da fonte para ser menor que o h1 */
     line-height: 1.5; /* Define o espaçamento entre linhas para melhorar a legibilidade */
