@@ -134,6 +134,8 @@ footer {
     margin: 0 auto; /* Centraliza horizontalmente o parágrafo */
     font-size: 0.9em; /* Ajusta o tamanho da fonte para ser menor que o h1 */
     line-height: 1.5; /* Define o espaçamento entre linhas para melhorar a legibilidade */
-    text-align: justify;
+    text-align: center;
+    height: 6em; /* Ajuste este valor conforme necessário */
+    overflow: hidden;
     color: white;
 }
