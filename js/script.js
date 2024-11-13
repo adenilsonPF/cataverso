@@ -84,3 +84,31 @@ function changeSlide(direction) {
     const offset = -currentSlide * 100;
     document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
 }
+
+// script.js
+
+// Seleciona o modal, a imagem dentro dele, e o elemento de legenda
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+
+// Adiciona evento de clique a cada imagem da galeria
+document.querySelectorAll('.gallery-container img').forEach(img => {
+    img.addEventListener('click', () => {
+        modal.style.display = "block"; // Exibe o modal
+        modalImg.src = img.src; // Define a imagem do modal como a imagem clicada
+        captionText.innerHTML = img.alt; // Exibe a legenda da imagem
+    });
+});
+
+// Função para fechar o modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Fecha o modal ao clicar fora da imagem
+modal.onclick = function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+};
