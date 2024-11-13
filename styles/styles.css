@@ -180,3 +180,47 @@ footer {
         width: 100%; /* Imagens em uma coluna para telas pequenas */
     }
 }
+/* Estilos para o Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com transparência */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 30px;
+}
