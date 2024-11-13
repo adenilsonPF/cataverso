@@ -139,3 +139,44 @@ footer {
     overflow: hidden;
     color: white;
 }
+/* Estilos gerais para a seção de mídia */
+#midia {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contêiner da Galeria */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos das imagens na galeria */
+.gallery-container img {
+    width: calc(33.33% - 10px); /* Cada imagem ocupa cerca de um terço da linha */
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Efeito de zoom ao passar o mouse */
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery-container img {
+        width: calc(50% - 10px); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container img {
+        width: 100%; /* Imagens em uma coluna para telas pequenas */
+    }
+}
